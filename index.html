@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blang</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Piet-based Esolang</h1>
+        <nav>
+            <a href="#tutorial">Tutorial</a>
+            <a href="#reference">Command Reference</a>
+            <a href="#editor">Code Editor</a>
+        </nav>
+    </header>
+    
+    <section id="intro">
+        <h2>Introduction</h2>
+        <p>Welcome to the Piet-based esolang! In this language, code is represented as images, where color transitions control the flow of execution.</p>
+    </section>
+
+    <section id="tutorial">
+        <h2>Tutorial: Creating Your First Piet Program</h2>
+        <p>Follow these steps to create and run your first Piet program:</p>
+        <ol>
+            <li><strong>Step 1: Choose a Drawing Tool</strong> - Use an image editor such as MS Paint, GIMP, or an online drawing tool to create your code. Ensure that the tool allows you to use colors precisely.</li>
+            <li><strong>Step 2: Define Color Transitions</strong> - Use the color sheet as a guide to arrange the colors in the image. Each color represents a different command or control flow in your program.</li>
+            <li><strong>Step 3: Create the Code</strong> - Design the image so that the color transitions form the logic of your program. For example, a red to blue transition might increment a variable, while a blue to green transition prints an ASCII character.</li>
+            <li><strong>Step 4: Save the Image</strong> - Save the image as a common format like PNG or JPEG to ensure color integrity.</li>
+            <li><strong>Step 5: Upload and Run</strong> - Use the code editor on this website to upload your image. Click the "Run" button to see the output of your program.</li>
+        </ol>
+        <p>For more complex programs, refer to the <a href="#reference">Command Reference</a> section.</p>
+    </section>
+
+    <section id="reference">
+        <h2>Command Reference</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Color Transition</th>
+                    <th>Command</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Red to Blue</td>
+                    <td>Increment a variable</td>
+                </tr>
+                <tr>
+                    <td>Blue to Green</td>
+                    <td>Output an ASCII character</td>
+                </tr>
+                <tr>
+                    <td>Green to Yellow</td>
+                    <td>Start a loop or conditional jump</td>
+                </tr>
+                <tr>
+                    <td>Yellow to Red</td>
+                    <td>End a loop or conditional block</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="colorSheet">
+        <h2>Color Sheet for Coding</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Color</th>
+                    <th>Command Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="background-color: red; color: white;">
+                    <td>Red</td>
+                    <td>Start or initialize a variable</td>
+                </tr>
+                <tr style="background-color: blue; color: white;">
+                    <td>Blue</td>
+                    <td>Increment the value</td>
+                </tr>
+                <tr style="background-color: green; color: white;">
+                    <td>Green</td>
+                    <td>Print an ASCII character</td>
+                </tr>
+                <tr style="background-color: yellow; color: black;">
+                    <td>Yellow</td>
+                    <td>Loop or conditional jump</td>
+                </tr>
+                <tr style="background-color: orange; color: white;">
+                    <td>Orange</td>
+                    <td>Decrement the value</td>
+                </tr>
+                <tr style="background-color: purple; color: white;">
+                    <td>Purple</td>
+                    <td>Move left in the program flow</td>
+                </tr>
+                <tr style="background-color: pink; color: black;">
+                    <td>Pink</td>
+                    <td>Move right in the program flow</td>
+                </tr>
+                <tr style="background-color: gray; color: black;">
+                    <td>Gray</td>
+                    <td>No operation (empty space)</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="editor">
+        <h2>Code Editor</h2>
+        <input type="file" id="fileInput" accept="image/*">
+        <button onclick="runInterpreter()">Run</button>
+        <div id="output"></div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="interpreter.js"></script>
+</body>
+</html>
