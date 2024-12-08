@@ -71,7 +71,7 @@ This project is open-source and available under the [MIT License](LICENSE).
 - Thanks to the Krita community for their pixel art capabilities.
 
 ## Contact
-For questions or feedback, please contact [your email address].
+For questions or feedback, please contact mmbkmcgamming2014@gmail.com.
 
 ---
 
